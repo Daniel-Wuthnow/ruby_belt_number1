@@ -1,0 +1,17 @@
+<h3>Register</h3>
+
+<form action="/users" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label>First Name:</label>
+	<input type="text" name="user[f_name]">
+	<label>Last Name:</label>
+	<input type="text" name="user[l_name]">
+	<label>Email:</label>
+	<input type="email" name="user[email]">
+	<label>Password:</label>
+	<input type="password" name="user[password]">
+	<label>Password Confirm:</label>
+	<input type="password" name="user[password_confirmation]">
+	<button type="submit">Register</button>
+</form>
+<a href="<%= new_session_path %>">Login</a>
