@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="/logout">logout</a>
+	<a href="/home">Home</a>
+	<h1>{{item.item}}</h1>
+	<h3>Users how added this item under there wish list:</h3>
+	{% for user in user %}
+		{{user.name}}<br>
+	{% endfor %}
+</body>
+</html>
